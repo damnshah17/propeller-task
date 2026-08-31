@@ -1,4 +1,4 @@
-# REPO_URL https://github.com/YOUR_USERNAME/propeller-task
+# REPO_URL https://github.com/damnshah17/propeller-task
 
 npx create-react-app propeller-task
 cd propeller-task
@@ -9,7 +9,10 @@ git add .
 git commit -m "Initial React app"
 
 gh auth status
+gh auth login
+
 gh repo create propeller-task --public --source=. --remote=origin --push
+gh repo view --web
 
 git checkout -b update_logo
 
